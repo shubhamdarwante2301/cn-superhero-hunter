@@ -3,7 +3,7 @@ window.onload = function () {
   // console.log(wrapper);
 
   let winurl = window.location.href;
-  let id = winurl.substring(winurl.lastIndexOf("#") + 1);
+  let id = winurl.substring(winurl.lastIndexOf("#") + 1) || 1017100;
 
   // chracter details
   let url = `https://gateway.marvel.com:443/v1/public/characters/${id}?ts=1&apikey=d51901e0cddf18f727fd9890c85bf119&hash=3c0807be06a02606d35aa7c35b9635aa`;
