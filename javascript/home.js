@@ -100,7 +100,7 @@ searchBtn.addEventListener("click", () => {
       let div = document.createElement("div");
       div.classList.add("character-card");
       div.setAttribute("id", id);
-      let path = `../pages/characterdetails.html#${id}`;
+      let path = `../cn-superhero-hunter/pages/characterdetails.html#${id}`;
       div.innerHTML = `
         <img class="poster" src=${thumbnail.path}.jpg alt="">
         <div class="card-body">
