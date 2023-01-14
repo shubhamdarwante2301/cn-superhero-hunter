@@ -47,10 +47,13 @@ function renderFavorite(favoriteContainer) {
     let div = document.createElement("div");
     div.classList.add("character-card");
     div.setAttribute("id", id);
+
+    // path to redirect to the character details page when user click on character titles
+    let detailsPath = `../cn-superhero-hunter/pages/characterdetails.html#${id}`;
     div.innerHTML = `
         <img class="poster" src=${path}.jpg alt="">
         <div class="card-body">
-        <p id=${id} class="card-title">${name}</p>
+        <a href=${detailsPath}>${name}</a>
         <input type="button" value="UnFavorite" id=${id} data-character='{"id": "${id}", "name": "${name}", "path": "${path}"}' onclick="updateFavorite(this)"/>
         </div>
     `;
